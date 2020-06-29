@@ -8,9 +8,22 @@ client.on("guildMemberAdd", member => {
   WelcomeChanel.send (`⚠️🔞 ${member} **SE PRIDRUŽIO SERVERU!**  (*šteta 5000€*)`)
 
 })
-client.on("message", msg => {
-  if (msg.content === "Janko") {
-    msg.reply("ja sam vaš spiritualni vođa, što trebate(TEST)?")
-  }
-})
+client.on("message", (message) => {
+  if (message.content === "Janko") {
+    message.reply("ja sam vaš spiritualni vođa, što trebate?");
+  } else
+ 
+  if (message.content.includes("šteta")) {
+    message.channel.send("Procijenjujem štetu na " + Math.floor(Math.random() * 100000) + "€");
+  } else
+
+  if (message.content.includes("steta")) {
+    message.channel.send("Procijenjujem štetu na " + Math.floor(Math.random() * 100000) + "€");
+  } else
+
+  if (message.content.includes("klasa")) {
+    message.channel.send("Preporučujem da uzmete " + (Math.floor(Math.random() * 10) + 5) + " komada, ali ne nikako više od 16 jer će kazna biti prevelika!");
+  } 
+
+});
 client.login(process.env.token);
