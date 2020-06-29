@@ -5,7 +5,7 @@ client.on("ready", () => {
 })
 client.on("guildMemberAdd", member => {
   const WelcomeChanel = member.guild.channels.cache.find(channel => channel.name === '📝naplata-štete')
-  WelcomeChanel.send ('⚠️🔞  **{user} SE PRIDRUŽIO SERVERU!**  (*šteta 5000€*))')
+  WelcomeChanel.send ('${member.user.username} test')
 
 })
 client.on("message", msg => {
