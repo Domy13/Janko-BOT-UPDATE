@@ -13,11 +13,11 @@ client.on("message", (message) => {
     message.reply("ja sam vaš spiritualni vođa, što trebate?");
   } else
  
- if (message.content.includes("šteta")) {
+  if (message.content.includes("je šteta")) {
     message.channel.send("Procijenjujem štetu na " + (Math.floor(Math.random() * 150) * 100) + "€");
   } else
 
-  if (message.content.includes("steta")) {
+  if (message.content.includes("je steta")) {
     message.channel.send("Procijenjujem štetu na " + (Math.floor(Math.random() * 150) * 100) + "€");
   } else
 
