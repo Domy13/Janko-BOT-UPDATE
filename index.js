@@ -5,8 +5,7 @@ client.on("ready", () => {
 })
 client.on("guildMemberAdd", member => {
   const WelcomeChanel = member.guild.channels.cache.find(channel => channel.name === '📝naplata-štete')
-  WelcomeChanel.send (`⚠️🔞 ${member} **SE PRIDRUŽIO SERVERU!**  (*šteta 5000€*)`)
-
+  WelcomeChanel.send (`⚠️🔞 ${member} **SE PRIDRUŽIO SERVERU!**  (*šteta ` + (Math.floor(Math.random() * 150) * 100) +  `€*)`)
 })
 client.on("message", (message) => {
   if (message.content === "Janko") {
