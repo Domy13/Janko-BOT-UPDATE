@@ -2,7 +2,7 @@ const Discord = require("discord.js")
 const client = new Discord.Client()
 client.on("ready", () => {
   console.log(`Logged in as ${client.user.tag}!`)
-  bot.user.setPresence({ game: { name: 'Fortnite', type: 0 } 
+  bot.user.setActivity('Fortnite')
 })
 client.on("guildMemberAdd", member => {
   const WelcomeChanel = member.guild.channels.cache.find(channel => channel.name === '📝naplata-štete')
