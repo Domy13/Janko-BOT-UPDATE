@@ -2,7 +2,7 @@ const Discord = require("discord.js")
 const client = new Discord.Client()
 client.on("ready", () => {
   console.log(`Logged in as ${client.user.tag}!`)
-  client.user.setActivity('Fortnite', { type: 'PLAYING' })
+  client.user.setActivity('AutoCAD 2021', { type: 'PLAYING' })
 })
 client.on("guildMemberAdd", member => {
   const WelcomeChanel = member.guild.channels.cache.find(channel => channel.name === '📝naplata-štete')
